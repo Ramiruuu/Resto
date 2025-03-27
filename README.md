@@ -1,7 +1,9 @@
-# Resto# Sarap sa CDO - Restaurant Website
+## Sarap sa CDO - Restaurant Website
 
 ## Overview
 "Sarap sa CDO" is a web-based restaurant ordering system designed to bring the flavors of Filipino cuisine to your fingertips. This project replicates a restaurant menu experience with a responsive, interactive interface built using HTML, CSS, and JavaScript. Customers can explore the menu, place orders, and complete transactions with either GCash or cash payment options.
+
+![image](https://github.com/user-attachments/assets/1bc392ed-e08e-444a-8389-40d17bca4fd1)
 
 ## Features
 - **Responsive Design**: Adapts to desktop, tablet, and mobile screens.
