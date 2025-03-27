@@ -1,0 +1,81 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarap sa CDO - Restaurant</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Sarap sa CDO</h1>
+            <p>Where Flavor Meets Fun</p>
+            <p class="location">Located at Osmena Street beside Unicity</p>
+            <p class="hours">Open Monday to Friday (8:00 AM - 7:00 PM)</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="menu">
+            <h2>Our Menu</h2>
+            <div class="menu-categories">
+                <div class="category">
+                    <h3>Desserts</h3>
+                    <div class="menu-item" data-id="1" data-price="60"><span>Halo-Halo</span><span>PHP 60.00</span></div>
+                    <div class="menu-item" data-id="2" data-price="70"><span>Mango Float</span><span>PHP 70.00</span></div>
+                    <div class="menu-item" data-id="3" data-price="80"><span>Leche Flan</span><span>PHP 80.00</span></div>
+                </div>
+                <div class="category">
+                    <h3>Appetizers</h3>
+                    <div class="menu-item" data-id="4" data-price="80"><span>Kinilaw nga isda</span><span>PHP 80.00</span></div>
+                    <div class="menu-item" data-id="5" data-price="90"><span>Lato na Salad</span><span>PHP 90.00</span></div>
+                    <div class="menu-item" data-id="6" data-price="100"><span>Humba</span><span>PHP 100.00</span></div>
+                </div>
+                <div class="category">
+                    <h3>Main Courses</h3>
+                    <div class="menu-item" data-id="7" data-price="120"><span>Adobo</span><span>PHP 120.00</span></div>
+                    <div class="menu-item" data-id="8" data-price="140"><span>Lechon Baboy/Manok</span><span>PHP 140.00</span></div>
+                    <div class="menu-item" data-id="9" data-price="160"><span>Kare-kare nga Kanding</span><span>PHP 160.00</span></div>
+                </div>
+            </div>
+            <button id="order-btn">Place Order</button>
+        </section>
+
+        <section id="order-modal" class="modal hidden">
+            <div class="modal-content">
+                <h2>Your Order</h2>
+                <div id="order-items"></div>
+                <div class="total">Total: PHP <span id="total-amount">0.00</span></div>
+                <div class="quantity-controls">
+                    <button id="add-item">Add Item</button>
+                    <button id="checkout">Checkout</button>
+                    <button id="close-modal">Close</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="payment-modal" class="modal hidden">
+            <div class="modal-content">
+                <h2>Payment</h2>
+                <div id="payment-items"></div>
+                <div class="total">Total: PHP <span id="payment-total">0.00</span></div>
+                <div class="payment-options">
+                    <button id="gcash-btn">GCash</button>
+                    <button id="cash-btn">Cash</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>For online orders: sarapsacdo@gmail.com</p>
+            <p>Contact: 09650423556 / 09551621672</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
